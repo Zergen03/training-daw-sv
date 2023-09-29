@@ -1,5 +1,12 @@
 function printMultiplicationTables() {
-
+    var array = new Array();
+    for(var i = 1; i <= 10; i++){
+        for(var n = 1; n <= 10; n++){
+            array[i - 1][n - 1] = (i * n);
+            // console.log(i * n);
+        }
+    }
+    console.log(...array);
 }
 
 printMultiplicationTables()

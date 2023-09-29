@@ -7,8 +7,33 @@
 
 
 function doCalculation(array) {
+    var suma = 0;
+    var media;
+    var mayor;
+    var menor;
+    for(i = 0; i < array.length; i++){
+        suma += array[i];
+    }
+    media = suma / array.length;
+    for(i = 0; i < array.length; i++){
+        if(i == 0){
+            mayor = array[i]; 
+            menor = array[i];
+            // menor = array[i];
+        }else{
+            if(array[i] > mayor){
+                mayor = array[i];
+            }
+            if(array[i] < menor){
+                menor = array[i];
+            }
+        }
 
-
+    }
+    console.log(`suma: ${suma}`);
+    console.log(`media: ${media}`);
+    console.log(`mayor: ${mayor}`);
+    console.log(`menor: ${menor}`);
 }
 
 

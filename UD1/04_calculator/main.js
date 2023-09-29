@@ -7,7 +7,18 @@
 
 // define variables
 let x, y;
-
-
+let suma, resta, multiplicacion, division;
+x = 2;
+y = 3;
 // print sum, substract, multiply and divide
-console.log('something')
+function calculadora() {
+    suma = x + y;
+    resta = x - y;
+    multiplicacion = x * y;
+    division = x / y;
+}
+calculadora()
+console.log(`suma: ${suma}
+resta: ${resta}
+multiplicacion: ${multiplicacion}
+division: ${division}`)
